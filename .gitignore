@@ -30,3 +30,13 @@ build/
 .project
 .classpath
 .settings/
+
+# Executable files
+*.exe
+*.out
+*.app
+a.out
+**/a.out
+*
+!/**/
+!*.*
