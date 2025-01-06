@@ -22,6 +22,7 @@ Temporary Items
 # IDE specific files and folders
 .idea/
 build/
+**/build/
 *.swp
 *.swo
 *.swn
@@ -29,8 +30,3 @@ build/
 .project
 .classpath
 .settings/
-
-# all c/c++ executable files
-*
-!*.*
-!*/
