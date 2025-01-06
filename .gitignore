@@ -21,7 +21,6 @@ Temporary Items
 
 # IDE specific files and folders
 .idea/
-.vscode/
 build/
 *.swp
 *.swo
@@ -30,3 +29,8 @@ build/
 .project
 .classpath
 .settings/
+
+# all c/c++ executable files
+*
+!*.*
+!*/
