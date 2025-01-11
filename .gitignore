@@ -111,7 +111,6 @@ Temporary Items
 !.vscode/extensions.json
 *.code-workspace
 **/build/
-<<<<<<< HEAD
 **/build/*
 
 # Local History for Visual Studio Code
