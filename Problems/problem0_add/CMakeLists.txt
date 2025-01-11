@@ -17,7 +17,11 @@ enable_testing()
 add_test(test-add test-add)
 
 add_custom_target(submission COMMAND
-    ${CMAKE_COMMAND} -E tar "cfv" "${CMAKE_CURRENT_BINARY_DIR}/problem0_add.zip" --format=zip
+    ${CMAKE_COMMAND} -E tar "cfv" "${CMAKE_CURRENT_BINARY_DIR}/problem0_submission.zip" --format=zip
        ${STUDENT_SOURCE}
        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-     
+
+add_custom_target(starter_download COMMAND
+    ${CMAKE_COMMAND} -E tar "cfv" "${CMAKE_CURRENT_BINARY_DIR}/../problem0_starter.zip" --format=zip
+       ${STUDENT_SOURCE} abstract_operator.hpp catch.hpp CMakeLists.txt
+       WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
